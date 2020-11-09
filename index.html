@@ -1,1 +1,15 @@
-hello world
+<html>
+<head>
+<title>API</title>
+</head>
+<body>
+<script>
+fetch('https://api.themoviedb.org/3/list/3673?sort_by=title.asc&api_key=18bf41bf6f5ffff864d58419fafb3f4a&language=es')
+  .then(data => {
+    console.log(data);
+  }).catch(error => {
+    // Handle error
+});
+</script>
+</body>
+</html>
